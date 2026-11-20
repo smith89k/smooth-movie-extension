@@ -1,0 +1,41 @@
+SMOOTH MOVIE - how to add it to Chrome
+======================================
+
+Add it (one time)
+-----------------
+1. Open Chrome.
+2. In the address bar, type   chrome://extensions   and press Enter.
+3. Turn on "Developer mode" (the switch in the top right corner).
+4. Click "Load unpacked".
+5. Pick this folder:   C:\_httdocs\smooth-movie-extension
+6. Click the puzzle-piece icon next to the address bar, then click the pin
+   next to "Smooth Movie". Now its icon (a yellow play button) stays visible.
+
+Use it on your movie site
+-------------------------
+1. Open the movie page.
+2. Click the Smooth Movie icon.
+3. Turn on "Close pop-up tabs on this site".
+4. Click "Reload page" if it asks.
+
+Ad blocking and smoother playback are already on for every site.
+Click the icon to see how many ads were blocked and pop-up tabs were closed
+in that tab.
+
+Good to know
+------------
+- Chrome may show a note about "developer mode extensions" when it starts.
+  That is normal for extensions you add yourself. Just close the note.
+- If you change any files in this folder, go to chrome://extensions and click
+  the round arrow on the Smooth Movie card to load the changes.
+- The extension cannot make your internet faster. It saves more of the movie
+  ahead of time, so short slowdowns don't stop the video.
+- It helps most on free movie sites. Paid apps like Netflix lock their players,
+  so it changes little there.
+- When "Close pop-up tabs on this site" is on, links on that site that open
+  OTHER websites in a new tab are closed too. Turn the switch off if you need one.
+
+For the developer
+-----------------
+  npm test               quick checks (no browser)
+  npm run test:browser   full check in Chrome with the extension loaded

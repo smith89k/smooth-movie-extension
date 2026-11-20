@@ -1,0 +1,289 @@
+:root {
+  --velvet: #4a1229;
+  --velvet-deep: #300b1a;
+  --seat: #8e1f48;
+  --butter: #f6c445;
+  --bulb-off: #6f4c5b;
+  --paper: #fbf9fc;
+  --ink: #22161f;
+  --muted: #6b5e68;
+  --line: #e7e0e6;
+  --switch-off: #cdc3cb;
+  --focus: #f6c445;
+
+  --title-font: "Bahnschrift Condensed", "Bahnschrift", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --body-font: "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif;
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1d1219;
+    --ink: #f4ecf2;
+    --muted: #b6a8b2;
+    --line: #3b2934;
+    --switch-off: #4f3d48;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  width: 320px;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 14px/1.4 var(--body-font);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ---------- marquee header: the one loud part ---------- */
+
+.marquee {
+  background: var(--velvet);
+  color: #fff6e6;
+  padding: 16px 18px 12px;
+}
+
+.marquee-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--title-font);
+  font-stretch: condensed;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+.status {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #f1d9e2;
+}
+
+.bulbs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+.bulbs span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--butter);
+  box-shadow: 0 0 6px 1px rgb(246 196 69 / 0.55);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+body.is-off .bulbs span {
+  background: var(--bulb-off);
+  box-shadow: none;
+}
+
+/* Bulbs light up one after another when you switch it back on. */
+body.lighting-up .bulbs span {
+  animation: bulb-on 0.5s both;
+  animation-delay: calc(var(--i) * 28ms);
+}
+
+@keyframes bulb-on {
+  from { background: var(--bulb-off); box-shadow: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.lighting-up .bulbs span { animation: none; }
+  .bulbs span, .track, .track::after { transition: none; }
+}
+
+/* ---------- settings ---------- */
+
+.controls {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.controls:disabled .row,
+.controls:disabled .site-name,
+.controls:disabled .count {
+  opacity: 0.45;
+}
+
+.site {
+  padding: 14px 18px 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.site-name {
+  margin: 0 0 8px;
+  font-weight: 600;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+.everywhere {
+  padding: 6px 18px 10px;
+}
+
+.everywhere .row + .row {
+  border-top: 1px solid var(--line);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.controls:disabled .row { cursor: default; }
+
+.row-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-title { font-weight: 600; }
+
+.row-help {
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+.count,
+.row-count {
+  color: var(--seat);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.count { margin: 4px 0 0; }
+.row-count { margin-top: 2px; }
+.row-count[hidden] { display: none; }
+
+@media (prefers-color-scheme: dark) {
+  .count,
+  .row-count { color: var(--butter); }
+}
+
+.no-site {
+  margin: 0;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+}
+
+/* ---------- switches ---------- */
+
+.switch {
+  position: relative;
+  flex: none;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.switch input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.track {
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: var(--switch-off);
+  transition: background 0.15s;
+  pointer-events: none;
+}
+
+.track::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.25);
+  transition: transform 0.15s;
+}
+
+.switch input:checked + .track { background: var(--seat); }
+.switch input:checked + .track::after { transform: translateX(16px); }
+
+.switch input:focus-visible + .track {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* The big switch sits on velvet, so it uses butter when on. */
+.switch-big { width: 48px; height: 28px; cursor: pointer; }
+.switch-big .track { border-radius: 14px; background: var(--velvet-deep); }
+.switch-big .track::after { width: 22px; height: 22px; }
+.switch-big input:checked + .track { background: var(--butter); }
+.switch-big input:checked + .track::after { transform: translateX(20px); background: var(--velvet); }
+.switch-big input:focus-visible + .track { outline-color: #fff; }
+
+/* ---------- reload reminder ---------- */
+
+.reload {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 18px 14px;
+  border-top: 1px solid var(--line);
+}
+
+.reload[hidden] { display: none; }
+
+.reload p {
+  margin: 0;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.reload button {
+  flex: none;
+  padding: 7px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--seat);
+  color: #fff;
+  font: 600 13px var(--body-font);
+  cursor: pointer;
+}
+
+.reload button:hover { background: var(--velvet); }
+
+.reload button:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}

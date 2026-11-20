@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Smooth Movie</title>
+  <link rel="stylesheet" href="popup.css">
+  <script type="module" src="popup.js"></script>
+</head>
+<body>
+  <header class="marquee">
+    <div class="marquee-top">
+      <div>
+        <h1>Smooth Movie</h1>
+        <p class="status" id="status">Working on every site</p>
+      </div>
+      <label class="switch switch-big">
+        <input type="checkbox" role="switch" id="enabled" aria-describedby="status">
+        <span class="track" aria-hidden="true"></span>
+        <span class="sr-only">Smooth Movie on</span>
+      </label>
+    </div>
+    <div class="bulbs" id="bulbs" aria-hidden="true"></div>
+  </header>
+
+  <fieldset class="controls" id="controls">
+    <legend class="sr-only">Settings</legend>
+
+    <section class="site" id="site-section" hidden>
+      <p class="site-name" id="site-name"></p>
+      <label class="row">
+        <span class="row-text">
+          <span class="row-title">Close pop-up tabs on this site</span>
+          <span class="row-help">Stops the new tabs that open when you click the video.</span>
+        </span>
+        <span class="switch">
+          <input type="checkbox" role="switch" id="guard">
+          <span class="track" aria-hidden="true"></span>
+        </span>
+      </label>
+      <p class="count" id="popup-count" hidden></p>
+    </section>
+
+    <p class="no-site" id="no-site" hidden>Open a movie page, then click this icon again to block its pop-up tabs.</p>
+
+    <section class="everywhere">
+      <label class="row">
+        <span class="row-text">
+          <span class="row-title">Block ads on all sites</span>
+          <span class="row-help">Hides ads and stops them from loading.</span>
+          <span class="row-count" id="ad-count" hidden></span>
+        </span>
+        <span class="switch">
+          <input type="checkbox" role="switch" id="adBlock">
+          <span class="track" aria-hidden="true"></span>
+        </span>
+      </label>
+      <label class="row">
+        <span class="row-text">
+          <span class="row-title">Smoother playback</span>
+          <span class="row-help">Loads more of the movie ahead, so it lags less.</span>
+        </span>
+        <span class="switch">
+          <input type="checkbox" role="switch" id="boost">
+          <span class="track" aria-hidden="true"></span>
+        </span>
+      </label>
+    </section>
+  </fieldset>
+
+  <footer class="reload" id="reload" hidden>
+    <p>Reload the page to use your new settings.</p>
+    <button type="button" id="reload-btn">Reload page</button>
+  </footer>
+</body>
+</html>

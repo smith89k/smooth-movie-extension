@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Pop-up test</title></head>
+<body>
+  <h1>Movie page with pop-ups</h1>
+  <button id="play" style="width:300px;height:150px">Play</button>
+  <a id="same-site" href="/landing.html?same" target="_blank">Next episode (same site)</a>
+  <script>
+    // What these sites do: the first click on "Play" opens an ad on another site.
+    document.getElementById('play').addEventListener('click', () => {
+      const adSite = location.origin.replace('localhost', '127.0.0.1');
+      window.open(adSite + '/landing.html?ad', '_blank');
+    });
+  </script>
+</body>
+</html>

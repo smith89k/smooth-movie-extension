@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Player test</title></head>
+<body>
+  <video id="video" muted></video>
+  <script src="/hls.min.js"></script>
+  <script>
+    const hls = new Hls();
+    hls.attachMedia(document.getElementById('video'));
+    window.result = {
+      maxBufferLength: hls.config.maxBufferLength,
+      backBufferLength: hls.config.backBufferLength,
+      abrBandWidthFactor: hls.config.abrBandWidthFactor,
+      supported: Hls.isSupported(),
+      isHls: hls instanceof Hls,
+      eventsWork: typeof Hls.Events.MANIFEST_PARSED === 'string',
+    };
+  </script>
+</body>
+</html>

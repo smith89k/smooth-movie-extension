@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Embedded player test</title></head>
+<body>
+  <h1>Movie page with the player inside a box from another site</h1>
+  <iframe id="player" width="640" height="360"></iframe>
+  <script>
+    const otherSite = location.href.replace('localhost', '127.0.0.1').replace('frame-host', 'player');
+    document.getElementById('player').src = otherSite;
+  </script>
+</body>
+</html>
