@@ -1,0 +1,11 @@
+# installed helper tools (recreate with: npm install)
+node_modules/
+
+# made by Chrome when it loads the extension
+_metadata/
+
+# pictures made by the browser tests
+e2e/screenshots/
+
+# zip files for the Chrome Web Store
+*.zip
