@@ -46,6 +46,10 @@ npm install
 npm test               # quick checks, no browser
 npm run test:browser   # loads the extension in Chrome and tests it on local pages
 npm run icons          # redraws the toolbar icons
+npm run package        # makes dist/smooth-movie-<version>.zip for the Chrome Web Store
+npm run store-images   # makes the store screenshots and promo tile in store/images/
 ```
+
+Publishing steps and the text to paste into the Web Store form are in [`store/STORE-LISTING.md`](store/STORE-LISTING.md). Privacy policy: [`PRIVACY.md`](PRIVACY.md).
 
 After changing files, click the reload arrow on the Smooth Movie card in `chrome://extensions`.
