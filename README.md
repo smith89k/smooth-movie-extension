@@ -1,6 +1,14 @@
 # Smooth Movie
 
+<p align="center">
+  <img src="icons/icon128.png" alt="Smooth Movie icon" width="96">
+</p>
+
 A Chrome extension for watching online video with fewer ads, pop-ups and pauses.
+
+> **Chrome Web Store:** submitted and **waiting for Google's approval**. Until it is live, install it by hand (see [Install](#install) below).
+
+![Smooth Movie toolbar menu: block ads, close pop-up tabs, smoother playback](store/images/screenshot-1-overview.jpg)
 
 - **Blocks ads** on every site, using a built-in list of known ad networks.
 - **Closes pop-up tabs** on sites you choose. When a page tries to open another website in a new tab, the tab is closed and you are taken back to your video.
@@ -8,7 +16,15 @@ A Chrome extension for watching online video with fewer ads, pop-ups and pauses.
 
 The toolbar menu has on/off switches and shows how many ads and pop-up tabs were blocked in the current tab.
 
+![One switch stops pop-up tabs on a movie site](store/images/screenshot-2-popups.jpg)
+
 ## Install
+
+### From the Chrome Web Store
+
+Coming soon. The extension is under review by Google. The link will be added here once it is approved.
+
+### By hand (developer mode)
 
 1. Download this project (green **Code** button → **Download ZIP**) and unzip it.
 2. In Chrome, open `chrome://extensions` and turn on **Developer mode**.
