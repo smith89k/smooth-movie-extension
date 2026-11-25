@@ -3,13 +3,13 @@ SMOOTH MOVIE - how to add it to Chrome
 
 Add it (one time)
 -----------------
-1. Open Chrome.
-2. In the address bar, type   chrome://extensions   and press Enter.
-3. Turn on "Developer mode" (the switch in the top right corner).
-4. Click "Load unpacked".
-5. Pick this folder:   C:\_httdocs\smooth-movie-extension
-6. Click the puzzle-piece icon next to the address bar, then click the pin
+1. Open Chrome and go to the Smooth Movie page in the Chrome Web Store:
+   https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl
+2. Click "Add to Chrome", then click "Add extension".
+3. Click the puzzle-piece icon next to the address bar, then click the pin
    next to "Smooth Movie". Now its icon (a yellow play button) stays visible.
+
+Chrome keeps it up to date by itself.
 
 Use it on your movie site
 -------------------------
@@ -24,10 +24,6 @@ in that tab.
 
 Good to know
 ------------
-- Chrome may show a note about "developer mode extensions" when it starts.
-  That is normal for extensions you add yourself. Just close the note.
-- If you change any files in this folder, go to chrome://extensions and click
-  the round arrow on the Smooth Movie card to load the changes.
 - The extension cannot make your internet faster. It saves more of the movie
   ahead of time, so short slowdowns don't stop the video.
 - It helps most on free movie sites. Paid apps like Netflix lock their players,
@@ -37,5 +33,13 @@ Good to know
 
 For the developer
 -----------------
+To run your own copy from this folder instead of the store version:
+  1. Type  chrome://extensions  in the address bar and press Enter.
+  2. Turn on "Developer mode" (top right corner).
+  3. Click "Load unpacked" and pick this project folder.
+  4. Turn off the store version while testing, so the two copies don't
+     both run.
+  After changing files, click the round arrow on the Smooth Movie card.
+
   npm test               quick checks (no browser)
   npm run test:browser   full check in Chrome with the extension loaded
