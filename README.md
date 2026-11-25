@@ -1,16 +1,21 @@
+<div align="center">
+
+<img src="icons/icon128.png" alt="Smooth Movie icon" width="96">
+
 # Smooth Movie
 
-<p align="center">
-  <img src="icons/icon128.png" alt="Smooth Movie icon" width="96">
-</p>
+**Watch online video with fewer ads, pop-ups and pauses.**
+A free Chrome extension that blocks ads, closes pop-up tabs and helps video players load further ahead.
 
-<p align="center">
-  <a href="https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl"><img src="https://img.shields.io/badge/Chrome%20Web%20Store-Add%20to%20Chrome-4285F4?logo=googlechrome&logoColor=white" alt="Available in the Chrome Web Store"></a>
-  <a href="https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl"><img src="https://img.shields.io/chrome-web-store/v/amcimdojlpcdohmlcffnnhffdadjlmfl?logo=googlechrome&logoColor=white&color=4285F4" alt="Chrome Web Store version"></a>
-  <a href="https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl"><img src="https://img.shields.io/chrome-web-store/users/amcimdojlpcdohmlcffnnhffdadjlmfl?color=16A34A" alt="Chrome Web Store users"></a>
-</p>
+<a href="https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl">
+  <img src="docs/images/chrome-web-store-badge.png" alt="Available in the Chrome Web Store" width="248">
+</a>
 
-A Chrome extension for watching online video with fewer ads, pop-ups and pauses.
+[![Chrome Web Store version](https://img.shields.io/chrome-web-store/v/amcimdojlpcdohmlcffnnhffdadjlmfl?label=version&color=4285F4)](https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl)
+[![Chrome Web Store users](https://img.shields.io/chrome-web-store/users/amcimdojlpcdohmlcffnnhffdadjlmfl?color=16A34A)](https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl)
+![Price: free](https://img.shields.io/badge/price-free-16A34A.svg)
+
+</div>
 
 ![Smooth Movie toolbar menu: block ads, close pop-up tabs, smoother playback](store/images/screenshot-1-overview.jpg)
 
@@ -47,6 +52,7 @@ To block pop-up tabs on a site, open it, click the Smooth Movie icon and turn on
 | `lib/` | Shared code (which site a page belongs to, saved settings) |
 | `icons/` | Toolbar icons, drawn by `tools/make-icons.js` |
 | `tests/`, `e2e/` | Quick checks and full checks in real Chrome |
+| `docs/images/` | Pictures used only by this README (not part of the extension) |
 
 ## Development
 
