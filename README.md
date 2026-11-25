@@ -4,17 +4,15 @@
   <img src="icons/icon128.png" alt="Smooth Movie icon" width="96">
 </p>
 
+<p align="center">
+  <a href="https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl"><img src="https://img.shields.io/badge/Chrome%20Web%20Store-Add%20to%20Chrome-4285F4?logo=googlechrome&logoColor=white" alt="Available in the Chrome Web Store"></a>
+  <a href="https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl"><img src="https://img.shields.io/chrome-web-store/v/amcimdojlpcdohmlcffnnhffdadjlmfl?logo=googlechrome&logoColor=white&color=4285F4" alt="Chrome Web Store version"></a>
+  <a href="https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl"><img src="https://img.shields.io/chrome-web-store/users/amcimdojlpcdohmlcffnnhffdadjlmfl?color=16A34A" alt="Chrome Web Store users"></a>
+</p>
+
 A Chrome extension for watching online video with fewer ads, pop-ups and pauses.
 
-<<<<<<< HEAD
-[![Available in the Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Add%20to%20Chrome-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl)
-[![Chrome Web Store version](https://img.shields.io/chrome-web-store/v/amcimdojlpcdohmlcffnnhffdadjlmfl?logo=googlechrome&logoColor=white&color=4285F4)](https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl)
-[![Chrome Web Store users](https://img.shields.io/chrome-web-store/users/amcimdojlpcdohmlcffnnhffdadjlmfl?color=16A34A)](https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl)
-=======
-> **Chrome Web Store:** submitted and **waiting for Google's approval**. Until it is live, install it by hand (see [Install](#install) below).
-
 ![Smooth Movie toolbar menu: block ads, close pop-up tabs, smoother playback](store/images/screenshot-1-overview.jpg)
->>>>>>> 23c88b2cc88acf4cf5b0f47fd0756074953cfaed
 
 - **Blocks ads** on every site, using a built-in list of known ad networks.
 - **Closes pop-up tabs** on sites you choose. When a page tries to open another website in a new tab, the tab is closed and you are taken back to your video.
@@ -26,20 +24,7 @@ The toolbar menu has on/off switches and shows how many ads and pop-up tabs were
 
 ## Install
 
-<<<<<<< HEAD
 Install it from the [Chrome Web Store](https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl): click **Add to Chrome**, then pin **Smooth Movie** from the puzzle-piece menu. Chrome updates it for you.
-=======
-### From the Chrome Web Store
-
-Coming soon. The extension is under review by Google. The link will be added here once it is approved.
-
-### By hand (developer mode)
-
-1. Download this project (green **Code** button → **Download ZIP**) and unzip it.
-2. In Chrome, open `chrome://extensions` and turn on **Developer mode**.
-3. Click **Load unpacked** and pick the unzipped folder.
-4. Pin **Smooth Movie** from the puzzle-piece menu.
->>>>>>> 23c88b2cc88acf4cf5b0f47fd0756074953cfaed
 
 To block pop-up tabs on a site, open it, click the Smooth Movie icon and turn on **Close pop-up tabs on this site**.
 
