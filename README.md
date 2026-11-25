@@ -2,6 +2,8 @@
 
 A Chrome extension for watching online video with fewer ads, pop-ups and pauses.
 
+**[Get Smooth Movie on the Chrome Web Store](https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl)**
+
 - **Blocks ads** on every site, using a built-in list of known ad networks.
 - **Closes pop-up tabs** on sites you choose. When a page tries to open another website in a new tab, the tab is closed and you are taken back to your video.
 - **Smoother playback.** Asks common web video players (hls.js and video.js) to load about 2 minutes ahead instead of 30 seconds, pick a slightly safer quality, and skip small gaps where the video gets stuck.
@@ -10,10 +12,7 @@ The toolbar menu has on/off switches and shows how many ads and pop-up tabs were
 
 ## Install
 
-1. Download this project (green **Code** button → **Download ZIP**) and unzip it.
-2. In Chrome, open `chrome://extensions` and turn on **Developer mode**.
-3. Click **Load unpacked** and pick the unzipped folder.
-4. Pin **Smooth Movie** from the puzzle-piece menu.
+Install it from the [Chrome Web Store](https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl): click **Add to Chrome**, then pin **Smooth Movie** from the puzzle-piece menu. Chrome updates it for you.
 
 To block pop-up tabs on a site, open it, click the Smooth Movie icon and turn on **Close pop-up tabs on this site**.
 
@@ -52,4 +51,10 @@ npm run store-images   # makes the store screenshots and promo tile in store/ima
 
 Publishing steps and the text to paste into the Web Store form are in [`store/STORE-LISTING.md`](store/STORE-LISTING.md). Privacy policy: [`PRIVACY.md`](PRIVACY.md).
 
-After changing files, click the reload arrow on the Smooth Movie card in `chrome://extensions`.
+### Run your own copy
+
+1. Download this project (green **Code** button → **Download ZIP**) and unzip it.
+2. In Chrome, open `chrome://extensions` and turn on **Developer mode**.
+3. Click **Load unpacked** and pick the unzipped folder.
+
+After changing files, click the reload arrow on the Smooth Movie card in `chrome://extensions`. Turn off the store version while testing so the two copies don't both run.
