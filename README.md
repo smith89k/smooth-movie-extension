@@ -7,7 +7,9 @@
 A Chrome extension for watching online video with fewer ads, pop-ups and pauses.
 
 <<<<<<< HEAD
-**[Get Smooth Movie on the Chrome Web Store](https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl)**
+[![Available in the Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Add%20to%20Chrome-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl)
+[![Chrome Web Store version](https://img.shields.io/chrome-web-store/v/amcimdojlpcdohmlcffnnhffdadjlmfl?logo=googlechrome&logoColor=white&color=4285F4)](https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl)
+[![Chrome Web Store users](https://img.shields.io/chrome-web-store/users/amcimdojlpcdohmlcffnnhffdadjlmfl?color=16A34A)](https://chromewebstore.google.com/detail/amcimdojlpcdohmlcffnnhffdadjlmfl)
 =======
 > **Chrome Web Store:** submitted and **waiting for Google's approval**. Until it is live, install it by hand (see [Install](#install) below).
 
