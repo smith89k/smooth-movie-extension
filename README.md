@@ -22,11 +22,11 @@ A free Chrome extension that blocks ads, closes pop-up tabs and helps video play
   <img src="art/banner-light.png" alt="Smooth Movie: a video player with ads blocked, pop-up tabs closed and two minutes of video already loaded ahead." width="100%">
 </picture>
 
-![Smooth Movie toolbar menu: block ads, close pop-up tabs, smoother playback](store/images/screenshot-1-overview.jpg)
-
 - **Blocks ads** on every site, using a built-in list of known ad networks.
 - **Closes pop-up tabs** on sites you choose. When a page tries to open another website in a new tab, the tab is closed and you are taken back to your video.
 - **Smoother playback.** Asks common web video players (hls.js and video.js) to load about 2 minutes ahead instead of 30 seconds, pick a slightly safer quality, and skip small gaps where the video gets stuck.
+
+![Smooth Movie toolbar menu: block ads, close pop-up tabs, smoother playback](store/images/screenshot-1-overview.jpg)
 
 The toolbar menu has on/off switches and shows how many ads and pop-up tabs were blocked in the current tab.
 
