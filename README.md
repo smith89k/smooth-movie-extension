@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="icons/icon128.png" alt="Smooth Movie icon" width="96">
+<img src="art/logo.svg" alt="Smooth Movie logo" width="112" height="112">
 
 # Smooth Movie
 
@@ -16,6 +16,11 @@ A free Chrome extension that blocks ads, closes pop-up tabs and helps video play
 ![Price: free](https://img.shields.io/badge/price-free-16A34A.svg)
 
 </div>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="art/banner-dark.png">
+  <img src="art/banner-light.png" alt="Smooth Movie: a video player with ads blocked, pop-up tabs closed and two minutes of video already loaded ahead." width="100%">
+</picture>
 
 ![Smooth Movie toolbar menu: block ads, close pop-up tabs, smoother playback](store/images/screenshot-1-overview.jpg)
 
