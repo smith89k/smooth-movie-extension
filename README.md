@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="art/logo.svg" alt="Smooth Movie logo" width="112" height="112">
+<img src="icons/icon128.png" alt="Smooth Movie logo" width="112" height="112">
 
 # Smooth Movie
 
